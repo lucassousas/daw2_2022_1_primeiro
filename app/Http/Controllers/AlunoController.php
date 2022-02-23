@@ -20,7 +20,7 @@ class AlunoController extends Controller
         if($request->get("id")==""){
             $aluno = new Aluno();
         }else{
-            $aluno = Aluno::Find($request->get("id"));
+            $aluno = Aluno::Find($request->get("id")); 
         }
         $aluno->nome = $request->get("nome");
         $aluno->email = $request->get("email");
